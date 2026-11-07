@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+   <div class="container py-4">
+    <h1 class="mb-1">My magic word lab</h1>
+    <p class="texted-muted mb-4">Discover type,Switch words,find and swap words and catch sneaky errors</p>
+
+    <div class="mb-4"><div class="card-body">
+        <h3 class="card-title">What type is it?</h3>
+        <button class="btn btn-warning" onclick="checkTypes()">Reveal the types</button>
+
+  <div class="typeResult" class="p-3 mt-3 rounded">Press the button to reveal the secret Types</div>
+  </div></div>
+  
+   <!-- Topic 2:string() and number() -->
+    <div class="card mb-4"><div class="card-body">
+        <h3 class="card-title">Switch the type</h3>
+        <input id="NumIn" class="form-control mb-2" placeholder="Try a number like (try: 42)">
+        <button class="btn btn-warning mr-2" onclick="toStr()">Turn into text</button>
+    
+         <button class="btn btn-warning " onclick="toNum()">Turn into number</button>
+  <div id="convResult" class="box mt-3 mt-3 rounded">Type a number above then press a button!</div>
+
+  <script>
+    var sen = "The dragan flew through the big castle";
+    function checkTypes() {
+        document.getElementById("typeResult").innerText =
+        "score 42     - type:" + typeof 42 + "\n" +
+        "name 'Alex'  - type: " + typeof "Alex" + "\n" +
+        "Game over true - type: " + typeof true;
+    }
+    
+
+  </script>
+    
+</body>
+</html>
